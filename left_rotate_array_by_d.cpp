@@ -54,7 +54,7 @@ void printArray(int arr[], int n)           //  function to print an array
 {
     int i;
     for (i = 0; i < n; i++)
-        printf("%d ", arr[i]);
+        cout<<arr[i];
 }
 
 int main()

@@ -37,7 +37,7 @@ void leftRotate(int arr[], int d, int n)
 	rvereseArray(arr, 0, n - 1); 
 } 
 
-/*UTILITY FUNCTIONS*/
+
 /* function to print an array */
 void printArray(int arr[], int size) 
 { 
@@ -65,9 +65,8 @@ int main()
 	int arr[] = { 1, 2, 3, 4, 5, 6, 7 }; 
 	int n = sizeof(arr) / sizeof(arr[0]); 
 	int d = 2; 
-
-	// in case the rotating factor is greater than array length 
-	d = d % n; 
+	
+	d = d % n;    // in case the rotating factor is greater than array length
 	leftRotate(arr, d, n); 
 	printArray(arr, n); 
 	return 0; 
